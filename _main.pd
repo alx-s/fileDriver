@@ -1,0 +1,11 @@
+#N canvas 813 511 450 300 10;
+#X obj 59 58 OSC/unpackOSC;
+#X obj 59 36 iemnet/udpreceive 12345;
+#X obj 59 80 OSC/routeOSC /pin3;
+#X obj 89 102 print;
+#X obj 59 101 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X connect 0 0 2 0;
+#X connect 1 0 0 0;
+#X connect 2 0 3 0;
+#X connect 2 0 4 0;
